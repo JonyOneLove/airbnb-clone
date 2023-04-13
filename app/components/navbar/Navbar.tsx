@@ -1,5 +1,12 @@
-import Container from '../Container'
+'use client'
+
 import { FC } from 'react'
+
+import Container from '../Container'
+
+import Logo from './Logo'
+import Search from './Search'
+import UserMenu from './UserMenu'
 
 const Navbar: FC = () => {
   return (
@@ -7,7 +14,9 @@ const Navbar: FC = () => {
       <div className='border-b-[1px] py-4'>
         <Container>
           <div className='flex flex-row items-center justify-between gap-3 md:gap-0'>
-            fdddddddddfdfdffdfdffffffff
+            <Logo />
+            <Search />
+            <UserMenu />
           </div>
         </Container>
       </div>
