@@ -1,6 +1,6 @@
 {
   module.exports = {
-    trailingComma: 'es5',
+    trailingComma: 'none',
     indent_style: 'space',
     indent_size: 2,
     semi: false,
@@ -12,23 +12,11 @@
     importOrder: [
       '<THIRD_PARTY_MODULES>',
       '^@/components/(.*)$',
-      '^@/screens/(.*)$',
-      '^@/layout/(.*)$',
-      '^@/ui/(.*)$',
-      '^@/hooks/(.*)$',
-      '^@/providers/(.*)$',
-      '^@/shared/(.*)$',
-      '^@/services/(.*)$',
-      '^@/assets/(.*)$',
-      '^@/utils/(.*)$',
-      '^@/api/(.*)$',
-      '^@/config/(.*)$',
-      '^@/store/(.*)$',
       '^../(.*)$',
       '^./(.*)$',
-      '(.scss*)$',
+      '(.scss*)$'
     ],
     importOrderSeparation: true,
-    importOrderSortSpecifiers: true,
+    importOrderSortSpecifiers: true
   }
 }
