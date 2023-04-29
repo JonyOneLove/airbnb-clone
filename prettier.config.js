@@ -14,9 +14,9 @@
       '^@/components/(.*)$',
       '^../(.*)$',
       '^./(.*)$',
-      '(.scss*)$'
+      '(.scss*)$',
     ],
     importOrderSeparation: true,
-    importOrderSortSpecifiers: true
+    importOrderSortSpecifiers: true,
   }
 }
