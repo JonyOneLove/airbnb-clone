@@ -1,9 +1,11 @@
 import { Nunito } from 'next/font/google'
 
-import ClientOnly from './components/ClientOnly'
-import Modal from './components/Modals/Modal'
-import Navbar from './components/navbar/Navbar'
+import ClientOnly from '@/components/ClientOnly'
+import RegisterModal from '@/components/Modals/RegisterModal'
+import Navbar from '@/components/navbar/Navbar'
+
 import './globals.css'
+import ToasterProvider from '@/providers/ToasterProvider'
 
 export const metadata = {
   title: 'Airbnb',
@@ -23,11 +25,8 @@ export default function RootLayout({
     <html lang='en'>
       <body className={font.className}>
         <ClientOnly>
-          <Modal
-            actionLabel='Submit'
-            title='Hello'
-            isOpen
-          />
+          <ToasterProvider />
+          <RegisterModal />
           <Navbar />
         </ClientOnly>
         {children}
