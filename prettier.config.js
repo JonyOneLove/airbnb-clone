@@ -11,12 +11,12 @@
     plugins: [require('prettier-plugin-tailwindcss')],
     importOrder: [
       '<THIRD_PARTY_MODULES>',
-      '^@/components/(.*)$',
+      '^@/app/(.*)$',
       '^../(.*)$',
       '^./(.*)$',
-      '(.scss*)$',
+      '(.scss*)$'
     ],
     importOrderSeparation: true,
-    importOrderSortSpecifiers: true,
+    importOrderSortSpecifiers: true
   }
 }
