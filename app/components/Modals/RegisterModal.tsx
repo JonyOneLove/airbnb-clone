@@ -11,12 +11,13 @@ import { toast } from 'react-hot-toast'
 import { AiFillGithub } from 'react-icons/ai'
 import { FcGoogle } from 'react-icons/fc'
 
+import useRegisterModal from '@/app/hooks/useRegisterModal'
+
 import Button from '../Button'
 import Heading from '../Heading'
 import Input from '../inputs/Input'
 
 import Modal from './Modal'
-import useRegisterModal from '@/hooks/useRegisterModal'
 
 const RegisterModal: FC = () => {
   const registerModal = useRegisterModal()
