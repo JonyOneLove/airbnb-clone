@@ -1,6 +1,6 @@
 {
   module.exports = {
-    trailingComma: 'none',
+    trailingComma: 'es5',
     indent_style: 'space',
     indent_size: 2,
     semi: false,
@@ -14,9 +14,9 @@
       '^@/app/(.*)$',
       '^../(.*)$',
       '^./(.*)$',
-      '(.scss*)$'
+      '(.scss*)$',
     ],
     importOrderSeparation: true,
-    importOrderSortSpecifiers: true
+    importOrderSortSpecifiers: true,
   }
 }
